@@ -62,6 +62,22 @@ p {
   padding: 10px;
 }
 
+/* RESIZE TITLE WHEN BROWSER WIDTH TOO THIN */
+
+@media (max-width: 600px) {
+  .titleSlave_L {
+  text-align: center;
+  margin: auto;
+  width: clamp(2rem, 3rem, 80px);
+  }
+  h1 {
+  font-family: times new roman;
+  font-size: clamp(1rem, 2rem, 2rem);
+  text-align: left;
+  color: #dddddd;
+  }
+}
+
 </style>
 </head>
 <body>
