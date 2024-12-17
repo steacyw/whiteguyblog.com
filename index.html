@@ -19,12 +19,6 @@ body {
   margin: auto;
 }
 
-.titleSlave_L{
-  min-width: 0;
-  margin: auto;
-  padding: 10px;
-}
-
 .titleSlave_R {
   min-width: 0;
   margin: auto;
@@ -39,6 +33,8 @@ h1 {
   text-align: left;
   color: #dddddd;
   transform: rotate(0deg);
+  line-height: clamp(30px, 3rem, 80px);
+  text-vertical-align: center;
 }
 
 p {
@@ -49,34 +45,8 @@ p {
   transform: rotate(0deg);
 }
 
-.wigText {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  font-size: 11vw;
-  font-family: 'Urbanist', sans-serif;
-  color: #1c1c1c;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  animation-name: wig;
-  animation-duration: 0.08s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-}
-@keyframes wig {
-  0%   {rotate: 0deg;}
-  50%  {rotate: -0.1deg;}
-  100% {rotate: 0deg;}
-}
-
 .spacer {
   margin: clamp(30px, 4vw, 60px);
-}
-
-.spacerLong {
-  margin: clamp(50px, 6vw, 80px);
 }
 
 .picDiv {
@@ -84,21 +54,21 @@ p {
   margin: auto;
   width: clamp(200px, 90vw, 600px);
   padding: 10px;
- }
+}
 
 .titlePicDiv {
   text-align: center;
-  margin: auto;
-  width: clamp(10px, 2rem, 60px);
-  padding: 4px;
- }
+  margin: left;
+  width: clamp(30px, 3rem, 80px);
+  padding-top: 1.4rem;
+}
 
 </style>
 </head>
 <body>
 
 <div class="titleMaster">
-  <div class="slave_home_slave_L"><a href="/favicon.svg" target="_blank" rel="noopener noreferrer"><img src="/favicon.svg" title="WGB" alt="whiteguyblog logo" width="30px"></a></div>
+  <div class="titlePicDiv"><a href="/favicon.svg" target="_blank" rel="noopener noreferrer"><img src="/favicon.svg" title="WGB" alt="whiteguyblog logo" width="30px"></a></div>
   <div class="slave_home_slave_R"><h1>welcome to White Guy blog . com !</h1></div>
 </div>
 
