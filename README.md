@@ -1,2 +1,2 @@
 # whiteguyblog.com
-website for guys like us
+a website for guys like us
