@@ -7,7 +7,15 @@
 <style>
 
 body {
-  image-rendering: pixelated;
+  /*THIS SHIT BELOW IS SUPPOSED TO GET RID OF ANTIALIASING. I COPIED IT FROM SOME STACK OVERFLOW THREAD. I'M A PROFESSIONAL WEB DEVELOPER. */
+  image-rendering: optimizeSpeed;             /* GIVE ME SPEED                    */
+  image-rendering: -moz-crisp-edges;          /* Firefox                          */
+  image-rendering: -o-crisp-edges;            /* Opera                            */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari)   */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                    */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                             */
+  /*THIS SHIT ABOVE IS SUPPOSED TO GET RID OF ANTIALIASING. I COPIED IT FROM SOME STACK OVERFLOW THREAD. I'M A PROFESSIONAL WEB DEVELOPER. */
+  image-rendering: pixelated;                 /*This one actualy works in Chrome  */
   background-image: url("/images/bg.gif");
   background-repeat: repeat;
 }
